@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/getYourlyrics/precache-manifest.5bdda4df56dfa96f9b78a0b8dfa558d0.js"
+  "/getYourLyrics/precache-manifest.298de679f19f9ab26f924e735f10acd6.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/getYourlyrics/index.html", {
+workbox.routing.registerNavigationRoute("/getYourLyrics/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
