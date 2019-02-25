@@ -2,7 +2,7 @@
   "name": "getyourlyrics",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mohitpatil.github.io/getYourlyrics",
+  "homepage": "http://mohitpatil.github.io/getYourLyrics",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.15",
     "@fortawesome/free-solid-svg-icons": "^5.7.2",
