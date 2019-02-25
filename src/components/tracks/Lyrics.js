@@ -68,7 +68,6 @@ class Lyrics extends Component {
                             <strong>Explicit Words? </strong>: {this.state.track.explicit === 0 ? 'No' : 'Yes' }
                         </li>
                     </ul>
-
                     <br />
                     <br />
                     <br />

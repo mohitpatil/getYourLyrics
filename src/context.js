@@ -1,13 +1,28 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+
 const Context = React.createContext();
+const reducer = (state, action) => {
+    // eslint-disable-next-line default-case
+    switch(action.type) {
+        case 'SEARCH_TRACKS':
+            return {
+                ...state,
+                track_list: action.payload,
+                heading: 'Search Results'
+            };
+        defualt:
+            return state;
+    }
+}
 
 export class Provider extends Component {
     state = {
         track_list : [
         
         ],
-        heading: "Top 10 Searched Tracks"
+        heading: "Top 10 Searched Songs..",
+        dispatch: action => this.setState(state => reducer(state, action))
     };
 
     componentDidMount() {
