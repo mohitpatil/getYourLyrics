@@ -20,13 +20,12 @@ class Lyrics extends Component {
         )
         .then(res => {
             this.setState({ lyrics : res.data.message.body.lyrics });
-            console.log(res.data);
+            //console.log(res.data);
             return axios
             .get(
                 `https://cors-anywhere.herokuapp.com/https://api.musixmatch.com/ws/1.1/track.get?track_id=${this.props.match.params.id}&apikey=2e4b26ab30ca98377d9c0d61e50e11fa`
             )
             .then(res => {
-                
                 this.setState({ track : res.data.message.body.track });
             })
             .catch(err => console.log(err));
