@@ -1,7 +1,7 @@
 import React from 'react';
 import  { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faVolumeUp, faPlay, faSnowman, faCompactDisc, faEye } from "@fortawesome/free-solid-svg-icons";
+import { faPlay, faSnowman, faCompactDisc, faEye } from "@fortawesome/free-solid-svg-icons";
 
 
 const Song = (props) => {
